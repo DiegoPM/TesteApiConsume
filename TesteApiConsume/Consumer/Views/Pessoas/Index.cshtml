@@ -1,0 +1,22 @@
+﻿@page
+@using API.Models;
+@model IEnumerable<API.Models.Pessoa>
+@{
+}
+<div class="text-center">
+    @foreach (var pessoa in Model)
+    {
+        <h6>Nome:</h6>
+        <h6>@pessoa.Name</h6>
+        <br />
+        <h6>Cpf:</h6>
+        <h6>@pessoa.Cpf</h6>
+        <br />
+        <h6>Endereco:</h6>
+        <h6>@pessoa.Adress</h6>
+        <br />
+        <h6>Genero:</h6>
+        <h6>@pessoa.Gender</h6>
+        <hr />
+    }
+</div>
